@@ -1,4 +1,5 @@
 import socket
+class echo:
     def __init__(self, host='0.0.0.0',port=2222):
         self.host = host
         self.port = port
