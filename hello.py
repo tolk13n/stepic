@@ -4,6 +4,6 @@ def application(environ, start_response):
     body = str()
     for i in environ['QUERY_STRING'].split('&'):
         body += i+'\r\n'
-    body = bytes(body, encoding = 'utf-8')
+   # body = bytes(body, encoding = 'utf-8')
     start_response(status, headers)
     return [body]

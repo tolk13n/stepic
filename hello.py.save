@@ -1,0 +1,4 @@
+def wsgi_applications(environ, start_response):
+	status = '200 OK'
+eaders = [('Content-Type','text/plain')]
+	
