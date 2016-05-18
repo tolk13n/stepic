@@ -1,0 +1,14 @@
+- model: ask.qa
+  pk: 1
+  fields:
+    title: WTF
+    text: whay im so stupid?
+    addet_at: 2016-05-18
+    rating: 2
+- model: ask.qa
+  pk: 2
+  fields:
+    title: test
+    text: test
+    addet_at: 2016-05-08
+    rating: 0

@@ -1,0 +1,7 @@
+- model: ask.qa
+  id: 1
+  fields:
+    title: WTF
+    text: whay im so stupid?
+    addet_at: 2016-05-18
+

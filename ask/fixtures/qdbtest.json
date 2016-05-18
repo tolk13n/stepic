@@ -1,0 +1,20 @@
+[
+ {
+  "model":"qa",
+  "pk": 1,
+  "fields":{
+    "title": "WTF",
+    "text": "whay im so stupid?",
+    "addet_at": "2016-05-18"}
+ },
+ {
+  "model":"qa",
+  "pk": 2,
+  "fields":{
+    "title": "1WTF",
+    "text": "2whay im so stupid?",
+    "addet_at": "2016-05-08"}
+ }
+
+]
+
