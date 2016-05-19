@@ -1,0 +1,11 @@
+<html>
+ <head>
+  <title>popular</title>
+ </head>
+ <body>
+{% for new in new_q %}
+  <a href="{% url 'question' new.id %}">{{new.title}}</a><br>
+{% endfor %}
+</body>
+</html>
+

@@ -4,9 +4,13 @@
  </head>
  <body>
  <h1>{{q.title}}</h1>
- Вопрос: {{q.text}}
+<br>{{q.text}}
 <br>
 <br>
- Ответ: {{a.text}}
+{% if a %}
+    {% for i in a %}
+        <br>{{i.text}}
+    {% endfor %} 
+{% endif %}
  </body>
 </html>
