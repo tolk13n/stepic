@@ -7,6 +7,11 @@
  Вопрос: {{q.text}}
 <br>
 <br>
- Ответ: {{a.text}}
+ Ответ: 
+{% if a %}
+    {% for i in a %}
+        <br>{{i.text}}
+    {% endfor %} 
+{% endif %}
  </body>
 </html>
