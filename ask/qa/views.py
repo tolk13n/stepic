@@ -28,7 +28,7 @@ def question(request, id):
 def new(request):
     q = Question.objects.order_by('addet_at')
     q = q.reverse()
-    p = Paginator(q,4)
+    p = Paginator(q,10)
     try:
         id = int(request.GET.get('page'))
     except:
@@ -42,7 +42,7 @@ def new(request):
 def popular(request):
     q = Question.objects.order_by('rating')
     q = q.reverse()
-    p = Paginator(q,4)
+    p = Paginator(q,10)
     try:
         id = int(request.GET.get('page'))
     except:
@@ -53,5 +53,3 @@ def popular(request):
         new_q = p.page(1)
     return render(request,'qa/popular.html',{'new_q':new_q} )
 
-=======
->>>>>>> 889e2f6a13116dc9aa47b67b758dffd6715a95fa
