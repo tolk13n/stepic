@@ -13,8 +13,8 @@ mysql -uroot -e "GRANT ALL PRIVILEGES ON db_ask.* TO 'django'@'localhost';"
 mysql -uroot -e "FLUSH PRIVILEGES;"
 
 rm -rf /home/box/web/ask/qa/migrations/
-python manage.py makemigrations qa
-python manage.py migrate qa
+python /home/box/web/ask/manage.py makemigrations qa
+python /home/box/web/ask/manage.py migrate qa
 
 sudo rm /etc/gunicorn.d/ask.conf
 sudo ln -s /home/box/web/etc/gunicorn.conf /etc/gunicorn.d/ask.conf
