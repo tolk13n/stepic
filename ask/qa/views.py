@@ -17,19 +17,13 @@ def question(request, id):
     except:
         raise Http404
     try:
-<<<<<<< HEAD
         a = Answer.objects.filter(question_id=id)
-#        a = q.autor
-=======
-#        a = Answer.objects.filter(question_id=id)
-        a = q.autor
->>>>>>> 889e2f6a13116dc9aa47b67b758dffd6715a95fa
     except Answer.DoesNotExist:
         a = None
 #    a = Question.answer.filter(id=id)
 #    return HttpResponse('Question_OK!<br>'+q.title+'\n'+q.text)
     return render(request,'qa/index.html',{'q' : q,'a':a })
-<<<<<<< HEAD
+
 
 def new(request):
     q = Question.objects.order_by('addet_at')
